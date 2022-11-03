@@ -1,21 +1,9 @@
-import './App.css';
+import Router from "./assets/router/router";
 
 function App() {
   return (
-    <div className="App">
-      <body>
-
-      Search for movies or TV series
-
-      Trending
-
-      <!-- Display trending shows -->
-
-      Recommended for you
-
-      <!-- Display recommended shows -->
-
-      </body>
+    <div>
+    <Router/>
     </div>
   );
 }
