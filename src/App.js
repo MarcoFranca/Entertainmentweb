@@ -1,3 +1,4 @@
+import React from "react";
 import Router from "./assets/router/router";
 
 function App() {
@@ -7,5 +8,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
