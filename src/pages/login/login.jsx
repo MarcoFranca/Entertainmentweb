@@ -1,21 +1,20 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {ButtonRed, LinkStyle, MainLogin, MainLoginForm, MainLoginFormContent} from "./loginStyle";
+import movieLogo from "../../assets/images/logo.svg"
 
 export default function Login() {
     return (
-        <>
-            <form>
-                <img src="" alt=""/>
-                <h1>Login</h1>
-
-                <input type="email" placeholder="Email address"/>
-                <input type="password" placeholder="Password"/>
-
-                <button>Login to your account</button>
-
-                <p>Don't have an account? <Link to="./singnup">Sign Up</Link></p>
-
-            </form>
-        </>
+        <MainLogin>
+            <MainLoginForm>
+                <img src={movieLogo} alt=""/>
+                <MainLoginFormContent>
+                    <h1>Login</h1>
+                    <input type="email" placeholder="Email address"/>
+                    <input type="password" placeholder="Password"/>
+                    <ButtonRed>Login to your account</ButtonRed>
+                <p>Don't have an account? <LinkStyle to="./singnup">Sign Up</LinkStyle></p>
+                </MainLoginFormContent>
+            </MainLoginForm>
+        </MainLogin>
     )
 }
